@@ -35,7 +35,8 @@ This project designs **8 controlled experiments** 🧪 to quantitatively analyze
 
 ### 📈 Accuracy Curve Comparison
 
-![Accuracy Curves](image.png)
+<img width="1789" height="536" alt="image" src="https://github.com/user-attachments/assets/97e7ebb1-57f9-4363-9d06-3dbe3bfccdc4" />
+
 
 **Left Chart - Training Accuracy** 🏋️
 - Model's learning progress on training data
