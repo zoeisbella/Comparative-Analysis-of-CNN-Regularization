@@ -32,12 +32,11 @@ We designed **8 technical combinations** covering four dimensions:
 | 🎯 **Triple-Technique Combination** | All three techniques together |
 
 ## 📊 Experimental Results
-## 📊 Experimental Results
-
 ### 1. 📈 Accuracy Curve Comparison
 
 **Left**: Training Accuracy Curve - The model's "practice" performance on the training set 🏋️  
 **Right**: Validation Accuracy Curve - The model's "exam" capability on new data 🎓
+<img width="1789" height="536" alt="image" src="https://github.com/user-attachments/assets/ffe4251e-91b2-4d74-96aa-9e2d42ba26dd" />
 
 ### 2. ✅ Final Test Accuracy
 
