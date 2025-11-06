@@ -1,19 +1,46 @@
-# Comparative-Analysis-of-CNN-Regularization
-This project systematically compares the effects of various regularization techniques on CIFAR-10 image classification. Through eight distinct experimental configurations, it provides an in-depth analysis of how data augmentation, GroupNormalization, and Dropout—individually and in combination—impact the performance of a CNN model.
+# 🧠 Comparative Analysis of CNN Regularization Techniques
 
-# Project Background
-In deep learning image classification tasks, data augmentation can expand the diversity of training data, Dropout helps mitigate overfitting, and group normalization stabilizes the training process. This project designs multiple sets of controlled experiments to quantitatively analyze the effects of these techniques when used individually or in combination, providing references for model optimization in similar tasks.
+> 🔍 A Visual Experiment on How Data Augmentation, Group Normalization & Dropout Affect Model Performance
 
-# Tech Stack
-Deep Learning Framework: TensorFlow 2.x + Keras
-Dataset: CIFAR-10 (10 classes of 32×32 color images)
-Visualization Tool: Matplotlib
-Runtime Environment: Python 3.7+, Jupyter Notebook (or any Python IDE)
+## 📖 Project Background
 
-# Experimental Design
-This experiment designs 8 technical combinations, covering four dimensions: "baseline model," "single technique," "dual-technique combination," and "triple-technique combination."
+In deep learning image classification tasks:
+- 🎨 **Data Augmentation** expands training data diversity
+- 🛑 **Dropout** helps mitigate overfitting risks  
+- ⚖️ **Group Normalization** stabilizes the training process
 
-# Experimental Results
-Accuracy Curve Comparison
-Left: Training Accuracy Curve – The model's "practice" performance on the training set.
-Right: Validation Accuracy Curve – The model's "exam" capability on new data (generalization ability).
+This project designs **8 controlled experiments** 🧪 to quantitatively analyze how these techniques perform individually and in combination, providing practical insights for model optimization in similar tasks! 📊
+
+## 🛠 Tech Stack
+
+| Component | Technology |
+|-----------|------------|
+| 🧩 **Deep Learning Framework** | TensorFlow 2.x + Keras |
+| 🗂 **Dataset** | CIFAR-10 (10 classes of 32×32 color images) |
+| 📈 **Visualization Tool** | Matplotlib |
+| 💻 **Runtime Environment** | Python 3.7+, Jupyter Notebook (or any Python IDE) |
+
+## 🧪 Experimental Design
+
+We designed **8 technical combinations** covering four dimensions:
+
+| Dimension | Description | 
+|-----------|-------------|
+| 🔰 **Baseline Model** | Plain CNN without regularization |
+| ⚡ **Single Technique** | One regularization method at a time |
+| 🤝 **Dual-Technique Combination** | Pairwise combinations |
+| 🎯 **Triple-Technique Combination** | All three techniques together |
+
+## 📊 Experimental Results
+
+### 📈 Accuracy Curve Comparison
+
+| | Training Phase | Validation Phase |
+|--|----------------|------------------|
+| **📉 Curve Type** | Training Accuracy Curve | Validation Accuracy Curve |
+| **🎯 What it Shows** | Model's "practice" performance 🏋️ | Model's "exam" capability 🎓 |
+| **💡 Key Insight** | How well the model learns patterns | Generalization ability on new data |
+
+---
+
+🚀 *Explore the code and see how these techniques transform model performance!* 
