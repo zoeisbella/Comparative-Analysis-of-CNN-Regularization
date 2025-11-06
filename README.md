@@ -34,8 +34,12 @@ We designed **8 technical combinations** covering four dimensions:
 ## 📊 Experimental Results
 ### 1. 📈 Accuracy Curve Comparison
 
-**Left**: Training Accuracy Curve - The model's "practice" performance on the training set 🏋️  
-**Right**: Validation Accuracy Curve - The model's "exam" capability on new data 🎓
+**Left**: Training Accuracy Curve 
+- Shows model's learning progress on training data
+- Indicates how well models "practice" on seen data 🏋️  
+**Right**: Validation Accuracy Curve 
+- Shows model's performance on unseen test data 🎓
+- Reflects true generalization capability
 <img width="1789" height="536" alt="image" src="https://github.com/user-attachments/assets/ffe4251e-91b2-4d74-96aa-9e2d42ba26dd" />
 
 ### 2. ✅ Final Test Accuracy
@@ -50,14 +54,22 @@ We designed **8 technical combinations** covering four dimensions:
 | Aug + Norm | 0.5745 |
 | Dropout + Norm | 0.6072 |
 | Aug + Dropout + Norm | 0.5039 |
-### 📈 Accuracy Curve Comparison
+## 🔍 Key Findings 
 
-| | Training Phase | Validation Phase |
-|--|----------------|------------------|
-| **📉 Curve Type** | Training Accuracy Curve | Validation Accuracy Curve |
-| **🎯 What it Shows** | Model's "practice" performance 🏋️ | Model's "exam" capability 🎓 |
-| **💡 Key Insight** | How well the model learns patterns | Generalization ability on new data |
+**🎯 Normalization Delivers Best Results**  
+Using only Group Normalization achieved the highest accuracy (0.6349) - approximately 5.6% improvement over baseline - demonstrating its crucial role in stabilizing training and enhancing model generalization.
 
+**⚡ Strategic Combinations Show Promise**  
+The Dropout + Normalization combination (0.6072) performed excellently, indicating complementary effects between these regularization methods: normalization handles internal covariate shift while Dropout prevents feature co-adaptation.
+
+**🚫 Data Augmentation & Dropout Conflict**  
+The combination of Data Augmentation and Dropout yielded the poorest results (0.4767), suggesting that using both simultaneously may cause over-regularization and excessively limit model learning capacity.
+
+**📉 Triple Combination Shows Diminishing Returns**  
+Using all three techniques together (0.5039) underperformed, proving that the "more is better" approach doesn't apply to regularization combinations - balance is essential.
+
+**📊 Baseline Provides Critical Reference**  
+The basic CNN model (0.5787) established a clear benchmark, confirming that any effective regularization combination must significantly exceed this performance level to be practically valuable.
 ---
 
 🚀 *Explore the code and see how these techniques transform model performance!* 
