@@ -32,7 +32,25 @@ We designed **8 technical combinations** covering four dimensions:
 | 🎯 **Triple-Technique Combination** | All three techniques together |
 
 ## 📊 Experimental Results
+## 📊 Experimental Results
 
+### 1. 📈 Accuracy Curve Comparison
+
+**Left**: Training Accuracy Curve - The model's "practice" performance on the training set 🏋️  
+**Right**: Validation Accuracy Curve - The model's "exam" capability on new data 🎓
+
+### 2. ✅ Final Test Accuracy
+
+| Experiment Configuration | Test Accuracy |
+|--------------------------|---------------|
+| Baseline | 0.5787 |
+| Augmentation | 0.5289 |
+| Dropout | 0.5604 |
+| Normalization | 0.6349 |
+| Aug + Dropout | 0.4767 |
+| Aug + Norm | 0.5745 |
+| Dropout + Norm | 0.6072 |
+| Aug + Dropout + Norm | 0.5039 |
 ### 📈 Accuracy Curve Comparison
 
 | | Training Phase | Validation Phase |
